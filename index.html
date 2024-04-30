@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body id="appointmentForm"  action="http://127.0.0.1:8000/formprocess" method=post>
+    <div class="hero">
+        <nav>
+            <div class="logo">
+                <!-- <h3>ADV Healthcare</h3> -->
+                <img  src="./Img/logoo.png" alt="" class="logo1" height="70px" >
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="appointment.html">Doctors</a></li>
+                    <li><a href="health.html">Healthify</a></li>
+                    <li><a href="singup.html">Login</a></li>
+                    <li><a style="color: rgb(243, 37, 37); " href="emer.html">Emergency</a></li>
+                  
+                </ul>
+            </div>
+        </nav>
+
+        <div class="home">
+
+            <img id="heart" src="Img/heart.jpg" alt="person">
+
+            <div class="rotat"></div>
+            <div class="rotat rotat2"></div>
+
+            <div class="home-data">
+                <h1>Health is Wealth</h1>
+                <h2>Elite Medical Expertise <br> Affordable Excellence</h2>
+                <a style="cursor: auto;" href="form.html" class="button">Book Appointment</a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <!-- //body -->
+    <div class="content">
+        <!-- <button id="btn1"><a href="appointment.html">Take appointment</a></button>
+        <div class="tips">
+            <h1>Start your day with a glass of water. Your body goes quite a few hours without hydration as you sleep.</h1>
+        </div> -->
+    </div>
+    
+   <center style="font-size: 40px; font-style:bold">Our sevice</center>
+   <br>
+    <div class="card-container">
+        <div class="card">
+            <img src="./Img/check.jpg" alt="Image 1">
+            <div class="card-content">
+                <h3>Health Check up</h3>
+                <i class="fa fa-medkit"></i>
+                <p>Healthy checkup</p>
+                <i class="fa fa-user-md" style="font-size:36px;"></i>
+                <p style="display: none;" id="para4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia ipsa sit culpa, doloremque, accusamus vitae fuga quaerat itaque numquam minima ullam, praesentium voluptatum veritatis dolorem nam explicabo id quibusdam.</p>
+                <a href="medicine.html"><img style="width: 20px; height:25px" src="./Img/medicine.png" alt="" srcset=""></a>
+              <button style="background: none; color:blue;" id="btn4" onclick="toggleHide4()">Read More</button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Img/ambu.png" alt="Image 2">
+            <div class="card-content">
+                <h3>Emergency</h3>
+                <i class="fa fa-medkit"></i>
+                <p>Emergency call for ambulance</p>
+                <i class="fa fa-user-md" style="font-size:36px;"></i>
+                <p style="display: none;" id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia ipsa sit culpa, doloremque, accusamus vitae fuga quaerat itaque numquam minima ullam, praesentium voluptatum veritatis dolorem nam explicabo id quibusdam.</p>
+                <a href="emer.html"><img style="width: 20px; height:25px" src="./Img/medicine.png" alt="" srcset=""></a>
+              <button style="background: none; color:blue;" id="btn1" onclick="toggleHide1()">Read More</button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Img/room.jpg" alt="Image 3">
+            <div class="card-content">
+                <h3>Best rooms</h3>
+                <i class="fa fa-medkit"></i>
+                <p>Comfortable rooms</p>
+                <i class="fa fa-user-md" style="font-size:36px;"></i>
+                <p style="display: none;" id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia ipsa sit culpa, doloremque, accusamus vitae fuga quaerat itaque numquam minima ullam, praesentium voluptatum veritatis dolorem nam explicabo id quibusdam.</p>
+                <a href="medicine.html"><img style="width: 20px; height:25px" src="./Img/medicine.png" alt="" srcset=""></a>
+              <button style="background: none; color:blue;" id="btn2" onclick="toggleHide2()">Read More</button>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="./Img/hp4.jpg" alt="Image 3">
+            <div class="card-content">
+                <h3>Best Test Labs 3</h3>
+                <i class="fa fa-medkit"></i>
+                <p>The best medical labs at a affordable price </p>
+                <i class="fa fa-user-md" style="font-size:36px;"></i>
+                <p style="display: none;" id="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia ipsa sit culpa, doloremque, accusamus vitae fuga quaerat itaque numquam minima ullam, praesentium voluptatum veritatis dolorem nam explicabo id quibusdam.</p>
+                <a href="medicine.html"><img style="width: 20px; height:25px" src="./Img/medicine.png" alt="" srcset=""></a>
+              <button style="background: none; color:blue;" id="btn3" onclick="toggleHide3()">Read More</button>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="./Img/donor.jpg" alt="Image 3">
+            <div class="card-content">
+                <h3>Donor</h3>
+                <i class="fa fa-medkit"></i>
+                <p>Latest technology at affordable price</p>
+                <i class="fa fa-user-md" style="font-size:36px;"></i>
+                <p style="display: none;" id="para6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia ipsa sit culpa, doloremque, accusamus vitae fuga quaerat itaque numquam minima ullam, praesentium voluptatum veritatis dolorem nam explicabo id quibusdam.</p>
+                <a href="Donor.html"><img style="width: 20px; height:25px" src="./Img/medicine.png" ></a>
+              <button style="background: none; color:blue;" id="btn6" onclick="toggleHide6()">Read More</button>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="./Img/hp6.jpg" alt="Image 3">
+            <div class="card-content">
+                <h3>Authentic Medicine</h3>
+                <i class="fa fa-medkit"></i>
+                <p>Authentic medicine at best price</p>
+                <i class="fa fa-user-md" style="font-size:36px;"></i>
+                <p style="display: none;" id="para5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia ipsa sit culpa, doloremque, accusamus vitae fuga quaerat itaque numquam minima ullam, praesentium voluptatum veritatis dolorem nam explicabo id quibusdam.</p>
+                <a href="medicine.html"><img style="width: 20px; height:25px" src="./Img/medicine.png" alt="" srcset=""></a>
+              <button style="background: none; color:blue;" id="btn5" onclick="toggleHide5()">Read More</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="picContent">
+        <div class="lines">
+            <h3><span>Hospital lives</span></h3>
+            <br>
+            <p>"Our hospital is dedicated to providing exceptional healthcare services to our community.
+                 With a team of skilled medical professionals and state-of-the-art facilities,<br>
+                  we strive to deliver compassionate and comprehensive care to every patient. <br>
+                  Whether it's emergency treatment, or specialized treatments,
+                   we prioritize the well-being and comfort of our patients."</p><br><i class="fa fa-ambulance" style="font-size:48px;color:red"></i>
+        </div>
+        <div class="imges">
+            <img style="width: 50%;" src="./Img/hp5.jpg" alt="">
+        </div>
+    </div>
+
+    <section>
+            
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="fcontainer">
+          <p>&copy; 2024 Your Website. All rights reserved.</p>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

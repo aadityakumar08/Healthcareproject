@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+   /* Base styles */
+
+/* All your existing CSS code */
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+  /* Styles for screens smaller than 768px width */
+
+  .container {
+    width: 90%; /* Adjust width to fit smaller screens */
+  }
+
+  form {
+    width: 100%; /* Ensure the form takes full width */
+  }
+
+  input,
+  select {
+    width: 100%; /* Make input fields and select boxes full width */
+  }
+
+  .logo1 {
+    height: 50px; /* Reduce height of the logo for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Styles for screens smaller than 480px width */
+
+  center {
+    font-size: 40px; /* Reduce font size of the center element */
+  }
+
+  .our {
+    font-size: 20px; /* Reduce font size of the .our class */
+  }
+
+  .doctor {
+    flex-direction: column; /* Stack doctors vertically on smaller screens */
+  }
+
+  .img1 {
+    width: 15px; /* Reduce size of the image */
+  }
+
+  .imp ul li {
+    margin-left: 10px; /* Reduce margin between list items */
+  }
+
+  nav {
+    padding: 2px; /* Reduce padding of the navigation */
+  }
+}
+
+</style>
+
+<body>
+    <nav>
+        <div class="logo">
+            <!-- <h3>ADV Healthcare</h3> -->
+            <img  src="./Img/logo6.png" alt="" class="logo1" height="70px" >
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="appointment.html" >Doctors</a></li>
+                <li><a href="health.html" class="active">Healthify</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+            <div class="container">
+                <h2>Book Appointment</h2>
+                <form id="appointmentForm"  action="http://127.0.0.1:3000/formprocess" method=post>
+                  <label for="patientName">Patient Name:</label>
+                  <input type="text" id="patientName" name="patientName" required><br><br>
+                  <label for="doctor">Choose a Doctor:</label>
+                  <select id="doctor" name="doctor" required>
+                    <option value="">Select Doctor</option>
+                    <option value="Dr. Mini Das">Dr. Mini Das</option>
+                    <option value="Dr. John Smith">Dr. John Smith</option>
+                    <option value="Dr. John Smith">Dr. sushmita Singh</option>
+                    <option value="Dr. John Smith">Dr. Rani sharma</option>
+                    <option value="Dr. John Smith">Dr. Nupur Das</option>
+                    <option value="Dr. John Smith">Dr. Vanshika Thakur</option>
+                    <!-- Add more options for other doctors -->
+                  </select><br><br>
+                  <label for="date">Date:</label>
+                  <input type="date" id="date" name="date" required><br><br>
+                  <button class="btn" type="submit">Book Appointment</button>
+                </form>
+                <div id="confirmation"></div>
+              </div>
+            
+        </section>
+   
+
+          <script src="script.js"></script>
+</body>
+</html>
